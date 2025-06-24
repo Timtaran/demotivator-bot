@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 env:
-  IMAGE_NAME: demotivator-bot
+  IMAGE_NAME: demotivator_bot
 
 jobs:
   build-and-push:
