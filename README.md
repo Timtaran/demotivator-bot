@@ -17,7 +17,8 @@
 1. Установите [Docker](https://www.docker.com/)
 2. Получите токен бота в [@BotFather](https://t.me/BotFather)
 3. Загрузите нужный шрифт в нужную директорию (в нашем случае - `/host_path/to/font.ttf`)
-4. ```shell
+4. 
+```shell
 docker run -d \
   -e ADMIN_IDS="[ADMIN_ID1, ADMIN_ID2]" \
   -e BOT_TOKEN="BOT_ID:SECRET_TOKEN" \
