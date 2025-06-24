@@ -1,0 +1,14 @@
+[project]
+name = "demotivator-bot"
+description = "Simple Telegram-bot to create demotivators with your watermark."
+version = "0.1.0"
+requires-python = ">=3.11"
+authors = [
+    {name = "timtaran", email = "timtaran.main@mail.ru"},
+]
+dependencies = [
+    "aiogram>=3.20.0.post0",
+    "pillow>=11.2.1",
+    "pydantic>=2.11.7",
+    "pydantic-settings>=2.10.0",
+]
