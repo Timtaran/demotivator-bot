@@ -2,7 +2,9 @@
 
 Простой Telegram-бот для создания демотиваторов с вашей вотермаркой.
 
-Сделано за 24 июня 2025 xDx
+Сделано за 24.06.2025 xDx
+
+[dem_example.webm](https://github.com/user-attachments/assets/b9c7d34e-d6ad-43aa-8c0f-346a6018a196)
 
 ## Функционал
 - [X] Создание демотиваторов
@@ -12,7 +14,20 @@
 
 ## Использование
 
-Распишу позднее, когда разберусь с GitHub Packages
+1. Установите [Docker](https://www.docker.com/)
+2. Получите токен бота в [@BotFather](https://t.me/BotFather)
+3. Загрузите нужный шрифт в нужную директорию (в нашем случае - `/host_path/to/font.ttf`)
+4. ```shell
+docker run -d \
+  -e ADMIN_IDS="[ADMIN_ID1, ADMIN_ID2]" \
+  -e BOT_TOKEN="BOT_ID:SECRET_TOKEN" \
+  -e FONT_PATH="/app/media/font.ttf" \
+  -e WATERMARK="@ d 3 m 1 k _ b o t" \
+  -e IS_PRIVATE="true" \
+  -v "/host_path/to/font.ttf:/app/media/font.ttf" \
+  ghcr.io/timtaran/demotivator-bot:latest
+```
+5. Всё!
 
 ### Переменные окружения
 - `BOT_TOKEN` - Токен бота
