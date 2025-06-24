@@ -32,4 +32,3 @@ jobs:
           push: true
           tags: |
             ghcr.io/timtaran/${{ env.IMAGE_NAME }}:latest
-            ghcr.io/timtaran/${{ env.IMAGE_NAME }}:${{ github.sha }}
